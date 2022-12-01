@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- will contain meta information on the page. Keywords, title, outside CSS libraries -->
+    <title>Chex Quest 90s</title>
+
+    <!-- CSS for a web page can go in the style tag -->
+    
+    <style>
+body {
+    
+  background: url(https://media1.giphy.com/media/Y0t7Q1BvPOkKYDhTv1/giphy.gif?cid=6c09b952t4ze18kjdzytfn1wy3qtj39ebjm9jzt2eeagy5wm&rid=giphy.gif&ct=s) repeat;
+    background-color: black;
+    background-size: 300px 200px;
+}
+
+@font-face {
+    font-family: 'JoyStix';
+    src:url('D:\\Joystix-Regular\\joystix.ttf');
+    src: url('D:\\Joystix-Regular\\joystix.ttf'), format('truetype');
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centeredBot{
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.3fr 0.4fr 1.2fr 0.3fr 2.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . header . ."
+    ". . Origin . ."
+    ". Characters click-here about ."
+    ". gameplay click-here images ."
+    ". . updates . ."
+    ". . . . .";
+    font-family: 'JoyStix';
+    color: white;
+}
+
+.Origin { grid-area: Origin;color:white; }
+
+.about { grid-area: about; color:white;}
+
+.click-here { grid-area: click-here; }
+
+.Characters { grid-area: Characters; color:white;}
+
+.updates { grid-area: updates; }
+
+.header { grid-area: header; text-align: center; color:lime}
+
+    </style>
+    
+    </head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Chex Quest</h1>
+            <h6><sub>(Definitely not a Doom Rip-off)</sub></h6>
+            <marquee><a href='https://en.wikipedia.org/wiki/Doom_(franchise)' style="color: white;">The True Hero of 90s Gaming!</a></marquee>
+        </div>
+        <div class="Origin">
+            <marquee behavior="alternate"><h3>Origin</h3></marquee>
+            <p style="background-color: black;">This was definitely an original idea <sub>(what even is a doom?!)</sub> 
+                created by Digital Cage as a Chex cereal promotion. It was(n't) a total 
+                conversion of the more violent video Doom. This was targeted at 
+                children from Ages 6-9. But has a surprisingly large fanbase
+                 even to this very day.</p>
+
+        </div>
+        <div class="about">
+            <marquee behavior="alternate"><h3>About</h3></marquee>
+            <p style="background-color: black;">Set on a distant planet named Bazoik, the game follows 
+                the Chex Warrior, a soldier clad in a Chex-shaped suit 
+                of armor, as he foils the invasion of the planet by the 
+                'Flemoids' a species of slimy, green invertebrates, 
+                who have infested the planet and captured many helpless 
+                colonists, whom the Chex Warrior must save. His main weapons 
+                are devices called "zorchers", which teleports his enemies 
+                to their home dimension. Their principal weapon is the use of mucus as a projectile.</p>
+        </div>
+        <div class="click-here">
+            <a href="https://www.chexmix.com/chexquest/">
+                <img src="https://media4.giphy.com/media/J5Fl9oS8vCrrVNciEV/giphy.gif" 
+                alt="Chex warrior prepared for battle."> 
+            </a>
+            <div class="centered" style="color: black; font-size: x-large;">The Future is Now!!!</div>
+            <div class="centeredBot" style="color: black; font-size: x-large;">(^Old Man^)</div>
+        </div>
+        <div class="Characters">
+            <marquee behavior="alternate"><h3>The Hero</h3></marquee>
+            <p style="background-color: black;">The Chex Warrior — Fred Chexter is the protagonist in all 
+                current Chex Quest related games. Always seen wearing body 
+                armor (resembling, oddly enough, a Chex piece), he hails 
+                from Chex Squadron. His clothes consist of his armor, a 
+                blue shirt, blue pants, gray gloves, and gray boots. He 
+                seems to be modeled after a marine, and has a deep, booming 
+                voice.</p>
+        </div>
+
+        <div class="updates">
+            <marquee behavior="alternate"><h3>Enemies</h3></marquee>
+            <ol style="background-color: black;">
+                <li><b style="color: lime;">Flemoidus Commonus</b> - Weakest and Most Common</li>
+                <li><b style="color: lime;">Felmo Bipedicus</b> - Much Stronger and Faster than the Commonus</li>
+                <li><b style="color: lime;">Armored Flemoidus Bipedicus</b> - Can Throw Slime at long range</li>
+                <li><b style="color: lime;">Felmoidus Cycloptis</b> - Strong Attacks only at close range, floaty and creepy</li>
+                <li><b style="color: lime;">The Flembrane</b> - Immobile wall of slime</li>
+            </ol>
+        </div>
+      </div>
+</body>
+
+
+</html>
