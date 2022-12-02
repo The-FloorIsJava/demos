@@ -45,3 +45,20 @@ console.log(stringifiedDog);
 
 const jsonBackToDog = JSON.parse(stringifiedDog);
 console.log(jsonBackToDog)
+
+// The Importance of var vs let vs const
+// Hoisting
+
+console.log(variable1) //hoist
+hoistME();
+var variable1 = 'hello'
+
+console.log(variable3)
+
+// Theses weren't around until ECMAScript6
+let variable2 = 'charles'
+const variable3 = 'kitten'
+
+function hoistME(){
+    console.log("hoistmeeeeeeee")
+}
