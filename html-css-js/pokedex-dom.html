@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Welcome to the Pokedex</h1>
+        <p>This is a place to keep track of pokemon</p>
+
+        <hr />
+        <input type="checkbox" name="element-type1" onclick="userElementSelect()"/>
+        <label id="element-type1" for="element-type1">
+            grass
+        </label>
+        <img id="starter-1" src="https://cosplayfu-website.s3.amazonaws.com/_Upload/b/30cm-Bulbasaur-Pokemon-Plush-Toy.jpg"/>
+        <hr />
+
+
+        <input  type="checkbox" name="element-type2" onclick="userElementSelect2()"/>
+        <label id="element-type2" for="element-type2">
+            dark
+        </label>
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/491.png"/>
+        <hr />
+
+        <input type="checkbox" name="element-type3"/>
+        <label id="element-type3" for="element-type3">
+            water
+        </label>
+        <img src="https://static.pokemonpets.com/images/monsters-images-800-800/2129-Shiny-Magikarp.webp"/>
+        <br />
+        <hr />
+
+        <input type="checkbox" name="element-type4" />
+        <label id="element-type4" for="element-type4">
+            fire
+        </label>
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"/>
+
+        <script>
+            function userElementSelect(){
+                if(document.getElementById("element-type1").innerHTML === "Fairy"){
+                    document.getElementById("element-type1").innerHTML = "Ghost";
+                    document.getElementById("starter-1").src = "https://www.pokemoncenter.com/products/images/P7591/741-08997/P7591_741-08997_01_full.jpg"
+                } else {
+                    document.getElementById("element-type1").innerHTML = "Fairy";
+                    document.getElementById("starter-1").src = "https://www.serebii.net/Shiny/SV/993.png"
+                }
+            }
+
+            document.getElementById("element-type1").innerHTML = "Fairy";
+            document.getElementById("starter-1").src = "https://www.serebii.net/Shiny/SV/993.png"
+
+            function userElementSelect2(){
+                alert("Huzzah you selected option 2")
+            }
+        </script>
+    
+    </body>
+</html>
