@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="customers">
+        <h4>Welcome to the Customers Page, please click the button below to find all customers if you're platnium tier.</h4>
+        <button onclick="viewCustomers()">View Customers</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>MemberID</th>
+                    <th>Name</th>
+                    <th>Balance</th>
+                    <th>Tier</th>
+                </tr>
+            </thead>
+            <tbody id="customerTable"></tbody>
+        </table>
+    </div>
+    <script src="customers.js"></script>
+</body>
+</html>
