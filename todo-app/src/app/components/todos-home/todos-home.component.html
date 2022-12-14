@@ -1,6 +1,6 @@
 <h1>Welcome to the Todos Home Page!</h1>
 <img [src]="image"/>
-
+<app-todo-form></app-todo-form>
 <div>
     <label>Show List: </label>
     <input type="checkbox" (click)="checkVisibility()" />
@@ -12,7 +12,7 @@
 <ng-template #elseBlock>
 
 <div *ngFor="let todo of todos">
-    <app-todo-card [todo]="todo"></app-todo-card>
+    <app-todo-card [todo]="todo" (markedTodoEvent)="markCompleted($event)"></app-todo-card>
 </div>
 
 </ng-template>

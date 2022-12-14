@@ -25,4 +25,8 @@ export class TodosHomeComponent implements OnInit{
         this.visibility = !this.visibility;
     }
 
+    markCompleted(id:number){
+        this.todoService.markCompleted(id);
+    }
+
 }

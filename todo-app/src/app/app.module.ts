@@ -9,6 +9,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 import { TodoCardComponent } from './components/todo-card/todo-card.component';
 import { CompletePipe } from './pipes/complete.pipe';
+import { TodoFormComponent } from './components/todo-form/todo-form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CompletePipe } from './pipes/complete.pipe';
     TodosPendingComponent,
     NavBarComponent,
     TodoCardComponent,
-    CompletePipe
+    CompletePipe,
+    TodoFormComponent
   ],
   imports: [
     BrowserModule,

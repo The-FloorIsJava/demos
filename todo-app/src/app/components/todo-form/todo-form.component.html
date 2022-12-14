@@ -1,0 +1,4 @@
+<h3>Add to Todos: </h3>
+<label for="item-input">Add an item: </label>
+<input type="text" id="item-input" #newTodo>
+<button type="button" (click)="addTodo(newTodo.value)">Add to Todos List</button>

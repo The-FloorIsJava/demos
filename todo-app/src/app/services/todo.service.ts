@@ -16,4 +16,24 @@ export class TodoService {
   todos : Todo[] = [this.todo1, this.todo2, this.todo3, this.todo4]
 
   constructor() { }
+
+  markCompleted(id : number){
+    this.todos.forEach( todo =>{
+        if(todo.id === id){
+          todo.isCompleted = !todo.isCompleted;
+          alert('Marked')
+        }
+      }
+    )
+  }
+
+  addTodo(title: string){
+    let todo : Todo = {
+      id: this.todos.length + 1,
+      title: title,
+      isCompleted: false
+    }
+    this.todos.push(todo);
+  }
+
 }
