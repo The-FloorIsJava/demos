@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Todo } from 'src/app/models/todo';
+import { TodoService } from 'src/app/services/todo.service';
 
 @Component({
   selector: 'app-todos-pending',
@@ -8,16 +9,12 @@ import { Todo } from 'src/app/models/todo';
 })
 export class TodosPendingComponent implements OnInit {
 
+  todos : Todo[] = []
 
-  todo1 : Todo = {id: 1, title: "Make a cup of java", isCompleted: false}
-  todo3 : Todo = {id: 3, title: "Buy some Mtn Dew & Doritos", isCompleted: false}
-  todo4 : Todo = {id: 4, title: "cry softly as my life withers away", isCompleted: false}
-
-  todos : Todo[] = [this.todo1, this.todo3, this.todo4]
-
-  constructor() { }
+  constructor(private todoService:TodoService) { }
 
   ngOnInit(): void {
+    this.todos = this.todoService.todos
   }
 
 }

@@ -5,24 +5,14 @@
     <label>Show List: </label>
     <input type="checkbox" (click)="checkVisibility()" />
 </div>
+<div *ngIf="!visibility; else elseBlock">
+    <h1>^^^^^ CLICK THE CHECKBOX TO SHOW THE LIST ^^^^^^</h1>
+</div>
 
-<div>
-    <h2>Todo #{{todos[0].id}}</h2>
-    <p>{{todos[0].title}}</p>
-    <p>Status: {{todos[0].isCompleted}}</p>
+<ng-template #elseBlock>
+
+<div *ngFor="let todo of todos">
+    <app-todo-card [todo]="todo"></app-todo-card>
 </div>
-<div>
-    <h2>Todo #{{todos[1].id}}</h2>
-    <p>{{todos[1].title}}</p>
-    <p>Status: {{todos[1].isCompleted}}</p>
-</div>
-<div>
-    <h2>Todo #{{todos[2].id}}</h2>
-    <p>{{todos[2].title}}</p>
-    <p>Status: {{todos[2].isCompleted}}</p>
-</div>
-<div>
-    <h2>Todo #{{todos[3].id}}</h2>
-    <p>{{todos[3].title}}</p>
-    <p>Status: {{todos[3].isCompleted}}</p>
-</div>
+
+</ng-template>

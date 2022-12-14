@@ -1,0 +1,6 @@
+<div>
+    <h2>Todo #{{todo.id}}</h2>
+    <p [ngStyle]="{'color': todo.isCompleted ? 'green' : 'red'}">{{todo.title | titlecase}}</p>
+    <p>Status: {{todo.isCompleted | complete | lowercase}}</p>
+    <input type="text" [(ngModel)]="todo.title" />
+</div>
