@@ -1,0 +1,11 @@
+<label>Username</label>
+<input placeholder="Enter Username" [(ngModel)]="customer.customerName"/>
+<br>
+<label>Password</label>
+<input type="password" placeholder="Enter Password" [(ngModel)]="customer.password"/>
+<br>
+<button mat-raised-button color="primary" (click)="login()">Login</button>
+
+<div *ngIf="!(loginStatus === '')">
+    <p>{{loginStatus}}</p>
+</div>
