@@ -22,4 +22,9 @@ export class CustomerService {
     if(token) return new HttpHeaders({authorization:token})
     return new HttpHeaders();
   }
+
+  validateCustomer(customer:Customer){
+    // TODO Implement validation
+    return customer
+  }
 }
